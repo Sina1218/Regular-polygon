@@ -1,0 +1,20 @@
+#code
+num = int(input("Enter your number : "))
+if num % 2 == 0:
+    print(f"{num} is even")
+    x = (num-2) * 180 
+    print(f"{num}sided regular is {x}")
+    x2 = x // num
+    print(f"{num}sided regular2 is {x2}")
+    y = (x // 360)
+    print(f"The Extrnal Angle of {num}sided regular is {y}")
+    Xx = (num *(num-3))//2
+    print(f"The Gatar of {num}sided regular is {Xx}")
+    Yy = (x // 360)
+    print(f"The TILING of {num}sided regular is {Yy}")
+    if Yy % 2 != 0:
+         print(f"{Yy} it's not good for TILING.")
+    else:
+        print(f"{Yy} it's good for  TILING.")
+else:
+    print(f"{num}is not even")
